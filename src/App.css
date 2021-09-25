@@ -1,38 +1,97 @@
+html {
+    min-height: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+body {
+    background: rgb(131,58,180);
+    background: linear-gradient(45deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .App {
-  text-align: center;
+    background: rgba(0, 0, 0, .8);
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 5rem;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.title {
+    list-style-type: none;
+    padding: 1em;
+}
+.title-selected {
+    background: rgba(71,95,148,1);
+    border-radius: 10px;
+    transition: .5s;
+}
+.title-selected label{
+    color: #fff;
+}
+.title-selected p {
+    color: #fff;
+}
+.titles-wrapper{
+    float: left;
+    width: 30%;
+}
+.caption-wrapper {
+    float: right; 
+    width: 60%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    }
+    ::-webkit-scrollbar-button:start:decrement,
+    ::-webkit-scrollbar-button:end:increment  {
+    height: 10px;
+    background-color: transparent;
+    }
+    ::-webkit-scrollbar-track-piece  {
+    background-color: #eeeeee;
+    -webkit-border-radius: 16px;
+    }
+    ::-webkit-scrollbar-thumb:vertical {
+    height: 10px;
+    background-color: rgba(71,95,148,1);
+    border: 1px solid #eee;
+    -webkit-border-radius: 16px;
+    }
+
+.modal-title-square {
+    height: 15%;
+    width: 10%;
+    background-color:rgb(111, 83, 167);
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.modal-title {
+    vertical-align: middle;
+    margin-left: 1em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.popup-button {
+    margin-top: 10%;
+    float: right;
+    padding: .7rem 1rem .7rem 1rem;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 5px;
+    font-weight: 800;
 }
 
-.App-link {
-  color: #61dafb;
+.submit{
+    color: #fff;
+    background: #007a5a;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cancel {
+    margin-right: 1em;
+    border: 1px solid #5e5e5e;
 }
