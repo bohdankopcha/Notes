@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-const NoteDelete = ({index, onClick}) => {
-    return (<DeleteButton onClick={()=>onClick(index)}>&#10005;</DeleteButton>)
+const NoteDelete = ({index, deleteNote}) => {
+    return (<DeleteButton onClick={()=>deleteNote(index)}>&#10005;</DeleteButton>)
 }
 
 const DeleteButton = styled.span`

@@ -8,15 +8,12 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.App {
-    background: rgba(0, 0, 0, .8);
-    width: 60%;
-    margin-left: 20%;
-    margin-top: 5rem;
-    border-radius: 15px;
-    overflow: hidden;
-    position: relative;
+/* tab library components styles */
+.titles-wrapper{
+    float: left;
+    width: 30%;
 }
+
 .title {
     list-style-type: none;
     padding: 1em;
@@ -31,14 +28,6 @@ body {
 }
 .title-selected p {
     color: #fff;
-}
-.titles-wrapper{
-    float: left;
-    width: 30%;
-}
-.caption-wrapper {
-    float: right; 
-    width: 60%;
 }
 
 ::-webkit-scrollbar {
@@ -60,38 +49,3 @@ body {
     border: 1px solid #eee;
     -webkit-border-radius: 16px;
     }
-
-.modal-title-square {
-    height: 15%;
-    width: 10%;
-    background-color:rgb(111, 83, 167);
-    border-radius: 5px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.modal-title {
-    vertical-align: middle;
-    margin-left: 1em;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
-}
-
-.popup-button {
-    margin-top: 10%;
-    float: right;
-    padding: .7rem 1rem .7rem 1rem;
-    border: none;
-    font-family: 'Nunito', sans-serif;
-    border-radius: 5px;
-    font-weight: 800;
-}
-
-.submit{
-    color: #fff;
-    background: #007a5a;
-}
-.cancel {
-    margin-right: 1em;
-    border: 1px solid #5e5e5e;
-}

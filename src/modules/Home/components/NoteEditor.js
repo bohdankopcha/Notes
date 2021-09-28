@@ -1,16 +1,16 @@
 import styled from "styled-components";
 import NoteDelete from "./NoteDelete";
 
-const CaptionHandler = ({ index, title, text, onChange, delNote }) => {
+const NoteEditor = ({ index, title, text, valueChangeHandler, deleteNote }) => {
   return (
     <div>
       <TitleInput
         value={title}
-        onChange={(e) => onChange(index, e.target.value, text)}
+        onChange={(e) => valueChangeHandler(index, e.target.value, text)}
       />
-      <NoteDelete index={index} onClick={delNote} />
+      <NoteDelete index={index} deleteNote={deleteNote} />
       <CaptionInput
-        onChange={(e) => onChange(index, title, e.target.value)}
+        onChange={(e) => valueChangeHandler(index, title, e.target.value)}
         defaultValue={text}
       ></CaptionInput>
     </div>
@@ -48,4 +48,4 @@ const CaptionInput = styled.textarea`
   
 `;
 
-export default CaptionHandler;
+export default NoteEditor;
